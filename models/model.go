@@ -6,7 +6,7 @@ type Student struct {
 	Email     string   `json:"email"`
 	Dept      string   `json:"dept"`
 	DOB       string   `json:"dob"`
-	PhoneNo   int      `json:"phoneno"`
+	PhoneNo   int32    `json:"phoneno"`
 	Courses   []Course `json:"courses"`
 }
 type Course struct {
@@ -19,12 +19,11 @@ type Enrolment struct {
 	StudentID   int32  `json:"studentid"`
 	CourseID    int32  `json:"courseid"`
 }
-type StudentResponse struct {
+type StudentMap struct {
 	StudentID int32  `json:"studentid"`
 	Name      string `json:"name"`
 	Email     string `json:"email"`
 	Dept      string `json:"dept"`
 	DOB       string `json:"dob"`
 	PhoneNo   int32  `json:"phoneno"`
-	Courses   Course `json:"courses"`
 }

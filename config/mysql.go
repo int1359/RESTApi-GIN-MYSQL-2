@@ -14,6 +14,6 @@ func DbURL() string {
 		util.GetEnvVariable("DB_PASSWORD"),
 		util.GetEnvVariable("DB_HOST"),
 		util.GetEnvVariable("DB_PORT"),
-		util.GetEnvVariable("DB_NAME_STUDENT"))
+		util.GetEnvVariable("DB_NAME"))
 
 }
